@@ -1,7 +1,7 @@
 # Katas
 Smashing Boxes Apprenticeship code katas
 
-#Coin Changer
+##Coin Changer
 
 The coin changer is a simple kata. Build a function that will return an
 array of USD change [Quarters, Dimes, Nickels, Pennies] for any given integer.
