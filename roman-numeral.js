@@ -13,17 +13,10 @@ function makeRoman(number) {
   }
   return result;
 }
-makeRoman();
 
 $('#romanize').on('submit', function(ev) {
   ev.preventDefault();
   var number = $('#num-input').val();
   var result = makeRoman(number);
-  console.log(result);
-});
-
-$('#num-input').change(function(){
-  var number = $('#num-input').val();
-  var result = makeRoman(number);
-  $('#show-roman').html($('#num-input').val(result));
+  $('#show-roman').html(result);
 });
