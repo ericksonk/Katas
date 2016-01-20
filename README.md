@@ -35,5 +35,4 @@ romanize(9)    #=> IX
 romanize(4)    #=> IV
 romanize(2)    #=> II
 romanize(1)    #=> I
->>>>>>> c0fb8860ac98e8ceae9806af0f6422cf4d53c03e
 ```
