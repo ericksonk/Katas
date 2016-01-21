@@ -2,8 +2,16 @@ function giveChange(value) {
   var change = [];
   var coins = [25, 10, 5, 1];
 
+  // run through each item in coins
+  for (var i = 0; i <= coins.length; i++) {
+
+    if (value / coins[i])
+    var toChange = Math.floor(value / coins[i]);
+    change.push(coins[i]);
+  }
+  return change;
 }
-giveChange();
+
 $('#coin-changer').on('submit', function(ev) {
   ev.preventDefault();
   var amount = $('#convert').val();
