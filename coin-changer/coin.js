@@ -1,25 +1,4 @@
-function giveChange(value) {
-  var change = [];
-  var coins = [25, 10, 5, 1];
-  // run through each item in coins
-  for (var i = 0; i <= coins.length; i++) {
-    var times = Math.floor(value / coins[i]);
-      // Number of times to push into `change`
-      for (var j = 0; j < times; j++) {
-        change.push(coins[i]);
-      }
-      value = value - (coins[i] * times);
-  }
-  return change;
-}
 
-$('#coin-changer').on('submit', function(ev) {
-  ev.preventDefault();
-  var amount = $('#convert').val();
-  var change = giveChange(amount);
-  console.log(change);
-  $('#show-change').html();
-});
 
 // The coin changer is a simple kata. Build a function that will return an array of USD change [Quarters, Dimes, Nickels, Pennies] for any given integer.
 //
