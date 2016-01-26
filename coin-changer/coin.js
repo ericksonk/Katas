@@ -14,3 +14,11 @@ function makeChange(value) {
   }
   return change;
 }
+
+$('#give-change').on('submit', function(ev) {
+  ev.preventDefault();
+  var value = $('#amount').val();
+  var change = makeChange(value);
+  console.log(change);
+  var show = $('#show-change').html(change + '');
+});
